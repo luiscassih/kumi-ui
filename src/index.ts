@@ -1,7 +1,5 @@
-export const hello = () => {
-  return 'world'
-}
+import { Box } from "./elements/basics"
 
 export default {
-  hello
+  Box
 }
