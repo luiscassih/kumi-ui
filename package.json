@@ -1,39 +1,14 @@
 {
-  "name": "kumi-ui",
-  "type": "module",
-  "version": "0.0.0",
-  "description": "A declarative, composable UI library for TypeScript.",
-  "author": "Luis Cassih <luiscassih@gmail.com>",
-  "license": "MIT",
-  "homepage": "https://github.com/luiscassih/kumi-ui#readme",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/luiscassih/kumi-ui.git"
-  },
-  "bugs": {
-    "url": "https://github.com/luiscassih/kumi-ui/issues"
-  },
-  "exports": {
-    ".": "./dist/index.mjs",
-    "./package.json": "./package.json"
-  },
-  "files": [
-    "dist"
+  "name": "kumi-ui-workspace",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "examples/*"
   ],
   "scripts": {
-    "build": "tsdown",
-    "dev": "tsdown --watch",
-    "test": "vitest run",
-    "typecheck": "tsc --noEmit",
-    "release": "bumpp",
-    "prepublishOnly": "pnpm run build"
-  },
-  "devDependencies": {
-    "@types/node": "^25.6.2",
-    "@typescript/native-preview": "7.0.0-dev.20260509.2",
-    "bumpp": "^11.1.0",
-    "tsdown": "^0.22.0",
-    "typescript": "^6.0.3",
-    "vitest": "^4.1.5"
+    "build": "bun run --filter '*' build",
+    "dev": "bun run --filter '*' dev",
+    "test": "bun run --filter '*' test",
+    "typecheck": "bun run --filter '*' typecheck"
   }
 }
