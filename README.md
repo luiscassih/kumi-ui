@@ -2,6 +2,12 @@
 
 A declarative, composable UI library for TypeScript.
 
-* bun run dev
-* bun link
-* in the other project: bun link kumi-ui
+* `bun install`
+* `bun run dev`
+
+
+* `bun run --filter kumi-ui build`
+* `bun run --filter @kumi-ui/react build`
+* `bun run --filter kumi-ui dev`
+* `bun run --filter @kumi-ui/react dev`
+* `bun run --filter kumi-ui-react-basic-example dev`

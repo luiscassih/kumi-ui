@@ -1,5 +1,5 @@
 {
-  "name": "kimi-ui-basic-example",
+  "name": "kumi-ui-react-basic-example",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,11 +10,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "kumi-ui": "workspace:*",
+    "kumi-ui/react": "workspace:*",
     "react": "^19.2.6",
     "react-dom": "^19.2.6"
   },
   "devDependencies": {
-    "kumi-ui/core": "workspace:*",
     "@babel/core": "^7.29.0",
     "@eslint/js": "^10.0.1",
     "@rolldown/plugin-babel": "^0.2.3",

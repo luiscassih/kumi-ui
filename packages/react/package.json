@@ -1,0 +1,44 @@
+{
+  "name": "kumi-ui/react",
+  "type": "module",
+  "version": "0.0.0",
+  "description": "React adapter for kumi-ui",
+  "author": "Luis Cassih <luiscassih@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/luiscassih/kumi-ui#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luiscassih/kumi-ui.git"
+  },
+  "bugs": {
+    "url": "https://github.com/luiscassih/kumi-ui/issues"
+  },
+  "exports": {
+    ".": "./dist/index.mjs",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsdown",
+    "dev": "tsdown --watch",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "bun run build"
+  },
+  "dependencies": {
+    "kumi-ui": "workspace:*"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0 || ^19.0.0",
+    "react-dom": "^18.0.0 || ^19.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6",
+    "tsdown": "^0.22.0",
+    "typescript": "^6.0.3"
+  }
+}
