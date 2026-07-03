@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "kumi-ui": "workspace:*",
-    "kumi-ui/react": "workspace:*",
+    "@kumi-ui/react": "workspace:*",
     "react": "^19.2.6",
     "react-dom": "^19.2.6"
   },

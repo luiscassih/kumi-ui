@@ -3,12 +3,13 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
-import K from "kumi-ui"
+import { Box } from "kumi-ui"
+import { Render } from "@kumi-ui/react"
 
 function App() {
   const [count, setCount] = useState(0)
 
-  const KumiView = K.Box()
+  const KumiView = Box()
 
   debugger
 
@@ -22,6 +23,7 @@ function App() {
         </div>
         <div>
           <h1>Get started: </h1>
+          { Render() }
           {/* <KumiView /> */}
           <p>
             Edit <code>src/App.tsx</code> and save to test <code>HMR</code>

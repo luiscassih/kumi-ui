@@ -6,9 +6,9 @@
     "examples/*"
   ],
   "scripts": {
-    "build": "bun run --filter '*' build",
-    "dev": "bun run --filter '*' dev",
-    "test": "bun run --filter '*' test",
-    "typecheck": "bun run --filter '*' typecheck"
+    "build": "bun run --sequential --filter '*' build",
+    "dev": "bun run --parallel --filter '*' dev",
+    "test": "bun run --parallel --filter '*' test",
+    "typecheck": "bun run --sequential --filter '*' typecheck"
   }
 }
